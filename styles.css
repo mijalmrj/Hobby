@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
 }
 
 html {
@@ -40,6 +41,8 @@ h1 {
     overflow-x: hidden;
     overflow-y: hidden;
     height: 80%;
+    margin-bottom: 54px;
+   
 }
 
 .hero img {
@@ -49,7 +52,7 @@ h1 {
 }
 
 .header {
-  background-color: whitesmoke;
+  background-color: rgba(151, 148, 148, 0.794);
   color: black;
   padding: 20px;
   display: flex;
@@ -97,7 +100,8 @@ nav {
 }
 
 .horizontal-menu ul li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 /* Vertical menu styles */
@@ -151,21 +155,26 @@ nav {
 
 .vertical-menu ul li a {
   text-decoration: none;
+  font-size: 22px;
 }
 
 .vertical-menu ul li a:hover {
   text-decoration: underline;
+}
+.vertical-menu ul li p {
+  font-size: 20px;
+  font-style: italic;
 }
 
 main {
   flex: 1;
   padding: 20px;
   text-align: center;
-  color: #fff;
+  
 }
 
 #about-me {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #about-me img {
@@ -193,6 +202,8 @@ main {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   border: 1px;
   border-radius: 8px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 
 }
 .about-content {
@@ -204,7 +215,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   /* background-color: rgba(0, 0, 0, 0.5); */
-  background-color: wheat;
+  background-color: rgba(151, 148, 148, 0.794);
   color: #712020;
   bottom: 0;
   margin-top: auto;
@@ -220,7 +231,7 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   margin: 20px;
-  padding: 20px;
+  margin-bottom: 55px;
   display: inline-block;
   color: black;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
@@ -246,10 +257,65 @@ footer {
 }
 
 
+
 /* my studt subject */
+
+#study-subject{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 50px;
+  margin: 12px;
+}
+
+#study-subject ol li{
+  text-align: start;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#study-subject div h1 {
+  margin-bottom: 22px;
+}
+#study-subject li{
+  color: black;
+  
+}
+
+.my-button {
+  padding: 10px 20px; 
+  font-size: 16px; 
+  background-color: #69c359; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.my-button a {
+  text-decoration: none;
+  color: white;
+}
+.my-button:hover {
+  background-color: rgb(86, 169, 71); 
+}
+.schedule-img {
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+}
+.my-button:active {
+  background-color: #3e8e41; 
+}
+
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
+  background-color: white;
+  border-radius: 10px;
+  width: 700px;
+  
 }
 .tg td {
   border-color: black;
@@ -281,6 +347,77 @@ footer {
   color: black;
 }
 
+.tg .tg-head {
+  border-color: inherit;
+  font-size: 22px;
+  text-align: left;
+  vertical-align: top;
+  color: black;
+  font-style: bold;
+  background-color: gray;
+  border: 1px solid black;
+}
+
 .highlight {
     color: rgb(0, 157, 255); 
+}
+.performer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.performer-info h1 {
+  margin-bottom: 20px;
+}
+
+.performer-info img {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border: 1px;
+  border-radius: 8px;
+  width: 600px;
+  height: 400px;
+}
+
+.performer-info p {
+  margin-bottom: 12px;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+  width: 1000px;
+
+}
+.img-aimer {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border: 1px;
+  border-radius: 8px;
+  width: 500px;
+  height: 500px;
+}
+
+
+
+#music li a {
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  width: 1000px;
+  color: rgb(200, 119, 19);
+  text-decoration: underline;
+
+
+}
+
+#music ul li {
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+#music ul {
+  list-style: none;
+
 }
